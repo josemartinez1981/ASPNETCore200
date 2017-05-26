@@ -1,0 +1,28 @@
+﻿@model IEnumerable<MVCBlog.Web.Models.PostOverviewDto>
+@{
+    ViewData["Title"] = "ASP NET CORE 200";
+}
+
+<div>
+    <h2>Latest posts</h2>
+    <ul>
+        @foreach (var post in Model)
+        {
+            <li>
+                <h3>@post.Title</h3>
+                <div>
+                    Posted by @post.Author on @post.Date.ToString("d")
+                </div>
+                <div>
+                    @post.Text
+                </div>
+                <div>
+                    Comments: @post.CommentsCount
+                </div>
+                <div>
+                    @Html.ActionLink("View...", "Index", "Posts", new { id = post.Id })
+                </div>
+            </li>
+        }
+    </ul>
+</div>

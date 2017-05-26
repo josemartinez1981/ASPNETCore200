@@ -1,0 +1,74 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26403.7
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Crosscutting", "Crosscutting", "{7126FA70-E5F7-4542-B6FF-3414C12E6839}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Model", "Model", "{E0DCF07A-0448-442E-B6BE-2BCCB27F1F35}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{5193AB9C-FDFA-42B2-A7BD-C107C548127C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCBlog.Web", "MVCBlog.Web\MVCBlog.Web.csproj", "{C12F0118-3BE9-4EBD-AA37-57F5565CB12C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCBlog.Crosscutting", "MVCBlog.Crosscutting\MVCBlog.Crosscutting.csproj", "{E0324DD5-B222-4A8F-B91E-696A6970BB48}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCBlog.Application", "MVCBlog.Application\MVCBlog.Application.csproj", "{538F8AC6-3923-423E-B3B2-14D35DC1B1A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCBlog.Domain", "MVCBlog.Domain\MVCBlog.Domain.csproj", "{DEE423D7-C92C-4BA0-B847-F24109F9B1B7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C12F0118-3BE9-4EBD-AA37-57F5565CB12C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C12F0118-3BE9-4EBD-AA37-57F5565CB12C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C12F0118-3BE9-4EBD-AA37-57F5565CB12C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C12F0118-3BE9-4EBD-AA37-57F5565CB12C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0324DD5-B222-4A8F-B91E-696A6970BB48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0324DD5-B222-4A8F-B91E-696A6970BB48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0324DD5-B222-4A8F-B91E-696A6970BB48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0324DD5-B222-4A8F-B91E-696A6970BB48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{538F8AC6-3923-423E-B3B2-14D35DC1B1A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{538F8AC6-3923-423E-B3B2-14D35DC1B1A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{538F8AC6-3923-423E-B3B2-14D35DC1B1A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{538F8AC6-3923-423E-B3B2-14D35DC1B1A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEE423D7-C92C-4BA0-B847-F24109F9B1B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEE423D7-C92C-4BA0-B847-F24109F9B1B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEE423D7-C92C-4BA0-B847-F24109F9B1B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEE423D7-C92C-4BA0-B847-F24109F9B1B7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C12F0118-3BE9-4EBD-AA37-57F5565CB12C} = {5193AB9C-FDFA-42B2-A7BD-C107C548127C}
+		{E0324DD5-B222-4A8F-B91E-696A6970BB48} = {7126FA70-E5F7-4542-B6FF-3414C12E6839}
+		{538F8AC6-3923-423E-B3B2-14D35DC1B1A3} = {E0DCF07A-0448-442E-B6BE-2BCCB27F1F35}
+		{DEE423D7-C92C-4BA0-B847-F24109F9B1B7} = {E0DCF07A-0448-442E-B6BE-2BCCB27F1F35}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tokiotaaspnetcore.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = MVCBlog.Application\\MVCBlog.Application.csproj
+		SccProjectTopLevelParentUniqueName1 = MVCBlog.sln
+		SccProjectName1 = MVCBlog.Application
+		SccLocalPath1 = MVCBlog.Application
+		SccProjectUniqueName2 = MVCBlog.Crosscutting\\MVCBlog.Crosscutting.csproj
+		SccProjectTopLevelParentUniqueName2 = MVCBlog.sln
+		SccProjectName2 = MVCBlog.Crosscutting
+		SccLocalPath2 = MVCBlog.Crosscutting
+		SccProjectUniqueName3 = MVCBlog.Web\\MVCBlog.Web.csproj
+		SccProjectTopLevelParentUniqueName3 = MVCBlog.sln
+		SccProjectName3 = MVCBlog.Web
+		SccLocalPath3 = MVCBlog.Web
+		SccProjectUniqueName4 = MVCBlog.Domain\\MVCBlog.Domain.csproj
+		SccProjectTopLevelParentUniqueName4 = MVCBlog.sln
+		SccProjectName4 = MVCBlog.Domain
+		SccLocalPath4 = MVCBlog.Domain
+	EndGlobalSection
+EndGlobal

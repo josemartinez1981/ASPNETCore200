@@ -1,0 +1,12 @@
+﻿@model MVCBlog.Web.Models.CommentDto
+
+<div>
+    @Html.DisplayNameFor(x => x.Author):
+    @Html.DisplayFor(x => x.Author)
+    <br />
+    @Html.DisplayNameFor(x => x.DatePublished):
+    @Model.DatePublished.ToString("d")
+</div>
+<div>
+    @Model.Text
+</div>

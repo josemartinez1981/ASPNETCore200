@@ -1,0 +1,7 @@
+﻿@{
+    ViewData["Title"] = "ASP NET CORE 200";
+}
+
+<div>
+    @await Component.InvokeAsync("RecentPosts", new { numberOfPosts = 3 })
+</div>

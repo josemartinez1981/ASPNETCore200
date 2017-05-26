@@ -1,0 +1,42 @@
+﻿@model MVCBlog.Web.Models.PostDto
+
+<h3>@Model.Title</h3>
+<div>
+    Posted by @Model.Author on @Model.Date.ToString("d")
+</div>
+<div>
+    @Model.Text
+</div>
+<br />
+<h2>Comments:</h2>
+<br />
+<div>
+    <ul>
+        @foreach (var comment in Model.Comments)
+        {
+            <li>
+                @Html.Partial("_Comment", comment)
+            </li>
+        }
+    </ul>
+</div>
+<br />
+<br />
+<div>
+    <h2>Add your comment here...</h2>
+    <form method="post" action="@Url.Action("AddComment", "Posts")">
+        <input type="hidden" name="postId" value="@Model.Id" />
+        <div>
+            <label >Enter your name:</label>
+            <input type="text" name="author" />
+        </div>
+
+        <textarea name="text" id="newComment" placeholder="Your comment here..."></textarea>
+        <br />
+        <button type="submit" class="btn btn-primary btn-sm">Save</button>
+    </form>
+</div>
+<br />
+<div>
+    @Html.ActionLink("Back to Home...", "Index", "Home")
+</div>

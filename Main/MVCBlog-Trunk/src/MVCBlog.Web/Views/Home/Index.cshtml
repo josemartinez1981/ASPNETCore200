@@ -1,0 +1,8 @@
+﻿@inject Microsoft.Extensions.Options.IOptions<MVCBlog.Crosscutting.Configuration.BlogConfiguration> BlogConfiguration
+@{
+    ViewData["Title"] = BlogConfiguration.Value.Title;
+}
+
+<div>
+    @await Component.InvokeAsync("RecentPosts", new { numberOfPosts = BlogConfiguration.Value.NumberOfPostsToShow })
+</div>
